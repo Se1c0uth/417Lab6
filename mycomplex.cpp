@@ -1,7 +1,12 @@
 #include<iostream>
 #include   <cmath>
 #include "mycomplex.h"
+
 using namespace std;
+/**
+ *@param a_Re - Real part of complex value
+ *@param a_Im - Imagine part of complex value
+ */
 Complex::Complex(double a_Re, double a_Im) {
     Re = a_Re;
     Im = a_Im;
@@ -11,14 +16,19 @@ Complex::Complex(const Complex & aRval) {
     Re = aRval.Re;
     Im = aRval.Im;
 }
+/** @brief Destructor for class Complex. Set real and imagine to null
+*/
 Complex::~Complex() {
     Re = 0.0;
     Im = 0.0;
 }
+/** @brief Initialize field of complex class
+*/
 void Complex::Set( double a_Re, double a_Im) {
     Re = a_Re;
     Im = a_Im;
 }
+
 Complex::operator double() {
     return abs();
 }
