@@ -14,8 +14,8 @@ int main(){
     cout << "M * A = "<< M * A << endl;             //Output for multiply of M and A
     cout << " M / 4.45 = "<< M / 4.45 << endl;      ///<Output for division of M by 4.45
     Complex D;
-  	cout << "Enter complex number D = ";
-  	cin >> D;                                       ///<Waiting for entering D
+    cout << "Enter complex number D = ";
+    cin >> D;                                       ///<Waiting for entering D
     A + = C + D;
     cout << "D = " << D << "\nA = " << A << endl;   //Output for sum of A, D and C
     return 0;
